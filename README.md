@@ -12,11 +12,11 @@ Install - Easy
 
         Find 
 
-call compile preprocessFileLineNumbers "server_traders.sqf";		//Compile trader configs
+"call compile preprocessFileLineNumbers "server_traders.sqf";		//Compile trader configs"
 
         ADD, Right under it
     
-call compile preprocessFileLineNumbers "walkingzeds\wdzini.sqf";    //NITF Walking Zombie Script
+"call compile preprocessFileLineNumbers "walkingzeds\wdzini.sqf";    //NITF Walking Zombie Script"
 
 Repack and run. All zombies should walk.
 
