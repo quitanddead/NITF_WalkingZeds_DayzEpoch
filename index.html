@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Nitf walkingzeds dayzepoch : Walking zombies scripts">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Nitf walkingzeds dayzepoch</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/slayterson/NITF_WalkingZeds_DayzEpoch">View on GitHub</a>
+
+          <h1 id="project_title">Nitf walkingzeds dayzepoch</h1>
+          <h2 id="project_tagline">Walking zombies scripts</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/slayterson/NITF_WalkingZeds_DayzEpoch/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/slayterson/NITF_WalkingZeds_DayzEpoch/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="nitf_walkingzeds_dayzepoch" class="anchor" href="#nitf_walkingzeds_dayzepoch" aria-hidden="true"><span class="octicon octicon-link"></span></a>NITF_WalkingZeds_DayzEpoch</h1>
+
+<p><strong>Walking zombies scripts</strong></p>
+
+<p>These are script files from dayz_code that have been altered to affect all zombie spawns to make them walk.
+I have packed them into one folder and created an ini file to load them all. This way only one edit needs to be made to the init.sqf file to install. The zombie ini file does override a few lines from compiles.sqf. So if you have any zombie altering scripts running now that load from a custom compiles.sqf file. only one set will load properly. A murge will be needed if so, contact me if you need help murging with a custom zombie script.</p>
+
+<p><strong>Install - Easy</strong></p>
+
+<p>Copy the walkingzeds folder to the root of your mission.pbo</p>
+
+<p>Open your init.sqf. also in the root of your mission.pbo.  </p>
+
+<p><strong>Find</strong><br>
+<code>call compile preprocessFileLineNumbers "server_traders.sqf";       //Compile trader configs</code></p>
+
+<p><strong>Add, Right under it</strong><br>
+<code>call compile preprocessFileLineNumbers "walkingzeds\wdzini.sqf";    //NITF Walking Zombie Script</code></p>
+
+<p>Repack and run. All zombies should walk.</p>
+
+<p>I pieced this together from a handfull of differnt forums a while back for the last server i ran. So i am not sure who to give credit to. each file edit was listed under a differnt forum. It seemed no one had pieced together all the required files to alter every form of zombie spawn.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Nitf walkingzeds dayzepoch maintained by <a href="https://github.com/slayterson">slayterson</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
