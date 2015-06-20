@@ -6,15 +6,15 @@ I have packed them into one folder and created an ini file to load them all. Thi
 
 Install - Easy
 
-1. Copy the walkingzeds folder to the root of your mission.pbo
+Copy the walkingzeds folder to the root of your mission.pbo
 
-2. Open your init.sqf. "also in the root of your mission.pbo."
+Open your init.sqf. "also in the root of your mission.pbo."
 
-        Find    call compile preprocessFileLineNumbers "server_traders.sqf";		//Compile trader configs
+Find  
+call compile preprocessFileLineNumbers "server_traders.sqf";		//Compile trader configs
 
-ADD, Right under it
-    
-        call compile preprocessFileLineNumbers "walkingzeds\wdzini.sqf";    //NITF Walking Zombie Script
+ADD, Right under it  
+call compile preprocessFileLineNumbers "walkingzeds\wdzini.sqf";    //NITF Walking Zombie Script
 
 Repack and run. All zombies should walk.
 
